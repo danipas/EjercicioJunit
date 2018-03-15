@@ -49,7 +49,7 @@ public class TestFiscal {
 
 	@Test
 	public void prueba2C() {
-		PersonaFiscal p1 = new PersonaFiscal("Daniel Pastor Sellers", 50, 10020, "C");
+		PersonaFiscal p1 = new PersonaFiscal("Daniel Pastor Sellers", 50, 1000, "C");
 		int impuesto = p1.calcularImpuesto();
 		Assert.assertEquals(300, impuesto);
 
@@ -59,7 +59,7 @@ public class TestFiscal {
 	public void prueba1D() {
 		PersonaFiscal p1 = new PersonaFiscal("Daniel Pastor", 18, 1000, "D");
 		int impuesto = p1.calcularImpuesto();
-		Assert.assertEquals(3020, impuesto);
+		Assert.assertEquals(300, impuesto);
 
 	}
 
@@ -67,7 +67,7 @@ public class TestFiscal {
 	public void prueba2D() {
 		PersonaFiscal p1 = new PersonaFiscal("Daniel Pastor Sellers", 50, 1000, "D");
 		int impuesto = p1.calcularImpuesto();
-		Assert.assertEquals(1020, impuesto);
+		Assert.assertEquals(100, impuesto);
 
 	}
 
